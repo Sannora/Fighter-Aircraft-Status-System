@@ -1,0 +1,38 @@
+.battery {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.battery-segments {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75px;
+    height: 30px;
+    position: relative;
+    top: 11%;
+    right: 19%;
+}
+.battery-segment {
+    width: 90%;
+    height: 100%;
+    background-color: #00FF00;
+    margin: 4px 0;
+    transition: height 0.5s ease, background-color 0.5s ease;
+    flex-shrink: 0;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+.blinking {
+    animation: blink 0.75s infinite;
+}

@@ -1,0 +1,40 @@
+.buttons-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.utility-button + .utility-button{
+    margin-left: 64px;
+}
+
+.utility-button{
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    color: #000;
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button-start{
+    background-color: #FFF;
+}
+
+.button-stop{
+    background-color: #FF0000;
+    color: #FFF;
+}
+
+.button-start:hover{
+    background-color: #E0E0E0;
+}
+
+.button-stop:hover{
+    background-color: #CC0000;
+}
